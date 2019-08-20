@@ -1,4 +1,4 @@
-public class Triangle  implements TwoDimensionalShapeInterface {
+public class Triangle extends Shape  implements TwoDimensionalShapeInterface {
 
 	private double base;
 	private double height;

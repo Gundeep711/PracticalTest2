@@ -4,20 +4,12 @@ public class Square extends Shape implements TwoDimensionalShapeInterface{
 	
 	private double side;
 	private String color;
-	private ArrayList<Shape> shapeList;
 
 
 	public Square(double side, String color) {
 		super();
 		this.side = side;
 		this.color=color;
-		this.shapeList=new ArrayList<Shape>();
-	}
-
-	
-	public void insertList(Shape shape){
-		this.shapeList.add(shape);
-		
 	}
 	
 	public double getSide() {
