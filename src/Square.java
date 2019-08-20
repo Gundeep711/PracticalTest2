@@ -38,7 +38,9 @@ public class Square extends Shape implements TwoDimensionalShapeInterface{
 	@Override
 	public void printInfo() {
 		double area=calculateArea();
-		System.out.println("Side of square is : "+this.getSide()+" and it's area is : "+area+" and it's color is : "+this.color);
+		System.out.println("**************************************");
+		System.out.println("Side of square is : "+this.getSide()+"\nArea of Square is : "+area+"\nColor of Square is : "+this.color);
+		System.out.println("**************************************");
 		
 		
 	}

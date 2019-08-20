@@ -46,10 +46,12 @@ public class Triangle extends Shape  implements TwoDimensionalShapeInterface {
 	@Override
 	public void printInfo() {
 		double area=calculateArea();
+		System.out.println("**************************************");
 		System.out.println("Base of triangle is : "+this.getBase());
 		System.out.println("Height of triangle is : "+this.getHeight());
 		System.out.println("Color of triangle is : "+this.color);
 		System.out.println("Area of triangle is : "+area);
+		System.out.println("**************************************");
 		
 
 	}
