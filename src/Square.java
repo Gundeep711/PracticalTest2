@@ -2,10 +2,15 @@
 public class Square implements TwoDimensionalShapeInterface{
 	
 	private double side;
+	private String color;
 
-	public Square(double side) {
+	
+
+
+	public Square(double side, String color) {
 		super();
 		this.side = side;
+		this.color=color;
 	}
 
 	
@@ -15,6 +20,14 @@ public class Square implements TwoDimensionalShapeInterface{
 
 	public void setSide(double side) {
 		this.side = side;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
 	}
 
 	@Override
@@ -27,7 +40,7 @@ public class Square implements TwoDimensionalShapeInterface{
 	@Override
 	public void printInfo() {
 		double area=calculateArea();
-		System.out.println("Side of square is : "+this.getSide()+" and it's area is : "+area);
+		System.out.println("Side of square is : "+this.getSide()+" and it's area is : "+area+" and it's color is : "+this.color);
 		
 		
 	}

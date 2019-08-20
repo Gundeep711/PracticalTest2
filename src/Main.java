@@ -1,7 +1,8 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-	
+	 static ArrayList<Shape> listofShapes=new ArrayList<Shape>();
 
 	public static void main(String[] args) {
 		
@@ -22,17 +23,26 @@ public class Main {
 			Scanner input = new Scanner(System.in);
 			
 			if(choice==1){
-				System.out.println("Enter the side of a ");
+				System.out.println("Enter the side of Square ");
+				double side=input.nextDouble();
+				Square squareObj=new Square(side,"blue");
+				squareObj.printInfo();
 				
 			}
 			else if(choice == 2)
 			{
-				
+				System.out.println("Enter the base of Triangle ");
+				double base=input.nextDouble();
+				System.out.println("Enter the height of Triangle ");
+				double height=input.nextDouble();
+				Triangle triangleObj=new Triangle(base, height,"green");
+				triangleObj.printInfo();
 			}
 			else if(choice>3){
 				System.out.println("Invalid Choice!");
 			}
 			else{
+				
 				
 			}
 		}
@@ -41,8 +51,8 @@ public class Main {
 	public static void showMenu() {
 		System.out.println("AREA GENERATOR");
 		System.out.println("==============");
-		System.out.println("1. Triangle");
-		System.out.println("2. Square");
+		System.out.println("1. Square");
+		System.out.println("2. Triangle");
 		System.out.println("3. Exit");
 	}
 

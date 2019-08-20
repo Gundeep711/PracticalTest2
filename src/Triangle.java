@@ -1,13 +1,17 @@
-public class Triangle implements TwoDimensionalShapeInterface {
+public class Triangle  implements TwoDimensionalShapeInterface {
 
 	private double base;
 	private double height;
+	private String color;
 
-	public Triangle(double base, double height) {
+	public Triangle(double base, double height, String color) {
 		super();
 		this.base = base;
 		this.height = height;
+		this.color=color;
 	}
+
+	
 
 	public double getBase() {
 		return base;
@@ -24,6 +28,13 @@ public class Triangle implements TwoDimensionalShapeInterface {
 	public void setHeight(double height) {
 		this.height = height;
 	}
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
 
 	@Override
 	public double calculateArea() {
@@ -37,7 +48,9 @@ public class Triangle implements TwoDimensionalShapeInterface {
 		double area=calculateArea();
 		System.out.println("Base of triangle is : "+this.getBase());
 		System.out.println("Height of triangle is : "+this.getHeight());
+		System.out.println("Color of triangle is : "+this.color);
 		System.out.println("Area of triangle is : "+area);
+		
 
 	}
 
