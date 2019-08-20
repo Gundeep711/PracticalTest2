@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-	 static ArrayList<Shape> listofShapes=new ArrayList<Shape>();
+	 static ArrayList<Square> squareShapes=new ArrayList<Square>();
 
 	public static void main(String[] args) {
 		
@@ -26,6 +26,7 @@ public class Main {
 				System.out.println("Enter the side of Square ");
 				double side=input.nextDouble();
 				Square squareObj=new Square(side,"blue");
+				squareObj.insertList(new Square(side,"blue") );
 				squareObj.printInfo();
 				
 			}
@@ -42,7 +43,9 @@ public class Main {
 				System.out.println("Invalid Choice!");
 			}
 			else{
-				
+				for (int i=0;i<squareShapes.size();i++){
+					squareShapes.get(i).printInfo();
+				}
 				
 			}
 		}
