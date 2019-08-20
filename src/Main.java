@@ -42,8 +42,8 @@ public class Main {
 			} else {
 				
 				if (Shapes.size() > 0) {
+					System.out.println("List of Shapes and their Dimensions and Area : ");
 					for (int i = 0; i < Shapes.size(); i++) {
-						System.out.println("List of Shapes and their Dimensions and Area : ");
 						Shapes.get(i).printInfo();
 						
 					}
